@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>setContactNametoUpperCaseassignment</name>
+        <label>setContactNametoUpperCase</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LastName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>setContactNameToUppercase</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Passe le nom du contact en majuscule</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>setContactNameToUppercase</name>
+        <dataType>String</dataType>
+        <expression>UPPER({!$Record.LastName})</expression>
+    </formulas>
+    <interviewLabel>Contact - set Contact Name To Uppercase {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Contact - set Contact Name To Uppercase</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>setContactNametoUpperCaseassignment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LastName</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BSB_ReferentielCommune</fullName>
+    <fields>Name</fields>
+    <fields>Code_Postal__c</fields>
+    <fields>Commune__c</fields>
+    <fields>Agglomeration__c</fields>
+    <fields>Code_INSEE__c</fields>
+    <label>BSB-RéférentielCommune</label>
+</CompactLayout>

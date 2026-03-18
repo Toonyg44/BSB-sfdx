@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nom_du_porteur_de_la_prestation__c</fullName>
+    <label>Nom du compte porteur de la prestation</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Prestations</relationshipLabel>
+    <relationshipName>Prestations</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

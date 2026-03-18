@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Labelisation__c</fullName>
+    <label>Labellisation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ABT</fullName>
+                <default>false</default>
+                <label>Atlanpole Biotherapies</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>EMC2</fullName>
+                <default>false</default>
+                <label>EMC2</label>
+            </value>
+            <value>
+                <fullName>ID4Car</fullName>
+                <default>false</default>
+                <label>ID4Car</label>
+            </value>
+            <value>
+                <fullName>IR</fullName>
+                <default>false</default>
+                <label>Images &amp; Réseaux</label>
+            </value>
+            <value>
+                <fullName>Pôle Mer Bretagne Atlantique</fullName>
+                <default>false</default>
+                <label>Pôle Mer Bretagne Atlantique</label>
+            </value>
+            <value>
+                <fullName>Valorial</fullName>
+                <default>false</default>
+                <label>Valorial</label>
+            </value>
+            <value>
+                <fullName>Végépolys Valley</fullName>
+                <default>false</default>
+                <label>Végépolys Valley</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

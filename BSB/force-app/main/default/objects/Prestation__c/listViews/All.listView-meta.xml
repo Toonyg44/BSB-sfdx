@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Numero_de_la_prestation__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Annee_d_ouverture_de_la_prestation_BSB__c</columns>
+    <columns>Annee_de_cloture_de_la_prestation_BSB__c</columns>
+    <columns>References_facture__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Annee_d_ouverture_de_la_prestation_BSB__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>2023</value>
+    </filters>
+    <label>Tout</label>
+</ListView>

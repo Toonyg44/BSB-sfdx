@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accord_de_confidentialite__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Accord de confidentialité signé entre la structure et BSB</inlineHelpText>
+    <label>Accord de confidentialité</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

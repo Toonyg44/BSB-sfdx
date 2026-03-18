@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partenaires__c</fullName>
+    <description>Concatene les noms de comptes partenaires associés</description>
+    <inlineHelpText>Mis à jour automatiquement après la mise à jour de comptes partenaires au projet</inlineHelpText>
+    <label>Partenaires</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

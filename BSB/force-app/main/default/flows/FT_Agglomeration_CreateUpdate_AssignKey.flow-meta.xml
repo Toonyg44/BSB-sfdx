@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Record_Key</name>
+        <label>Assign Record Key</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Agglomeration_Key__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fAgglomerationKey</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Met à jour la clé d&apos;un enregistrement Agglomeration à la création ou la modification d&apos;un enregistrement</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fAgglomerationKey</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Code_Postal__c} &amp; &quot;_&quot; &amp; {!$Record.Commune__c}</expression>
+    </formulas>
+    <interviewLabel>FT_Agglomeration_Create {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FT_Agglomeration_CreateUpdate_AssignKey</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Record_Key</targetReference>
+        </connector>
+        <filterFormula>OR ( ISNEW(), ISCHANGED({!$Record.Code_Postal__c}), ISCHANGED({!$Record.Commune__c}))</filterFormula>
+        <object>Agglomeration__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

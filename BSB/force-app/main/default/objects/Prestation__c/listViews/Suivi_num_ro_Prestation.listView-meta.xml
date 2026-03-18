@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suivi_num_ro_Prestation</fullName>
+    <columns>Numero_de_la_prestation__c</columns>
+    <columns>NAME</columns>
+    <columns>Annee_d_ouverture_de_la_prestation_BSB__c</columns>
+    <columns>Reference_devis__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Facture__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Suivi numéro Prestation</label>
+</ListView>

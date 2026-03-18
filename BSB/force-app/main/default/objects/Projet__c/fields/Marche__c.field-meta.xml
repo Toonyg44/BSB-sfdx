@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marche__c</fullName>
+    <label>Marché</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agro-industrie</fullName>
+                <default>false</default>
+                <label>Agro-industrie</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>Autre</label>
+            </value>
+            <value>
+                <fullName>Biotech Pharma</fullName>
+                <default>false</default>
+                <label>Biotech Pharma</label>
+            </value>
+            <value>
+                <fullName>Cosmétique</fullName>
+                <default>false</default>
+                <label>Cosmétique</label>
+            </value>
+            <value>
+                <fullName>Eco-industries</fullName>
+                <default>false</default>
+                <label>Eco-industries</label>
+            </value>
+            <value>
+                <fullName>E-santé</fullName>
+                <default>false</default>
+                <label>E-santé</label>
+            </value>
+            <value>
+                <fullName>Technologies médicales</fullName>
+                <default>false</default>
+                <label>Technologies médicales</label>
+            </value>
+            <value>
+                <fullName>Nutrition santé</fullName>
+                <default>false</default>
+                <label>Nutrition santé</label>
+            </value>
+            <value>
+                <fullName>Alimentaire</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alimentaire</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

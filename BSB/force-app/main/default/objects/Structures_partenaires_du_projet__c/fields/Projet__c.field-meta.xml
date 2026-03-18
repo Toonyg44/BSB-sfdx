@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Projet__c</fullName>
+    <label>Projet</label>
+    <referenceTo>Projet__c</referenceTo>
+    <relationshipLabel>Structures partenaires du projet</relationshipLabel>
+    <relationshipName>Structures_partenaires_du_projet</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
